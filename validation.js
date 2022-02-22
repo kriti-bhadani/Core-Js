@@ -54,7 +54,7 @@ function validate3() {
 function validate4() {
     passspan.innerHTML = ""
     passnode.style.border = "1px solid green";
-    let regexp = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])");
+    let regexp = new RegExp("/^([0-9a-zA-Z]){0,9}$/");
     let password = passnode.value;
     console.log(password);
     if (password == "") {
